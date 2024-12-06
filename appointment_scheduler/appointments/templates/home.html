@@ -1,0 +1,17 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Appointment Scheduler</title>
+</head>
+<body>
+    <h1>Businesses</h1>
+    {% for business in businesses %}
+        <div>
+            <h2>{{ business.name }}</h2>
+            <p>{{ business.description }}</p>
+            <p>Contact: {{ business.contact_info }}</p>
+        </div>
+    {% endfor %}
+</body>
+</html>
